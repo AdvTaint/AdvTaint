@@ -50,7 +50,7 @@ vd_superviser = Ollama(model="deepseek-r1:32b", temperature=0,num_ctx=65536,keep
 ```
 
 ### Usage (Input/Output)
-* **Input:** The path of the code file to be detected
+* **Input:** The path of the code files to be detected
     ```bash
     python AdvTaint.py
     ```
