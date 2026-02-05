@@ -5,13 +5,13 @@
 ## 1. Datasets
 The dataset infrastructure is organized into three distinct components:
 
-* **InterPVD** You can download in [here](https://github.com/CGCL-codes/VulTrigger/tree/main/dataset)
+* **InterPVD** You can download in [here](https://github.com/CGCL-codes/VulTrigger/tree/main/dataset).
 We also provide a reference file for reading code ```Dataset/get_code_from_InterPVD.py```
 
-* **ReposVul:** You can download in [here](https://github.com/Eshe0922/ReposVul)
+* **ReposVul:** You can download in [here](https://github.com/Eshe0922/ReposVul).
 We also provide a reference file for reading code ```Dataset/get_code_from_ReposVul.py```
 
-* **PKCO-2025:** You can download in [here](https://github.com/qcri/llmxcpg/blob/main/data/pkco_test.json)
+* **PKCO-2025:** You can download in [here](https://github.com/qcri/llmxcpg/blob/main/data/pkco_test.json).
 We also provide the original files and CVE/DIFF in```PKCO-2025```
 
 ---
@@ -63,7 +63,7 @@ vd_superviser = Ollama(model="deepseek-r1:32b", temperature=0,num_ctx=65536,keep
 ---
 
 ## 6. Evaluation
-We use LLM to automatically evaluate whether the detection results conform to the ground truth。
+We use LLM to automatically evaluate whether the detection results conform to the ground truth.
 
 ### Vulnerable Code Evaluation
 * **Script:** `evaluation/llm_judge_vul.py`
