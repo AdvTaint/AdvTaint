@@ -1,0 +1,19 @@
+# --- LangChain & LangGraph Core ---
+langchain==0.3.27
+langchain-community==0.3.29
+langchain-core==0.3.79
+langchain-openai==0.3.11
+langgraph==0.6.7
+
+# --- LLM & Pydantic Data Validation ---
+openai==1.109.1
+pydantic==2.11.9
+pydantic-settings==2.11.0
+
+# --- Static Analysis & AST Parsing ---
+tree-sitter==0.21.3
+
+# --- Utilities & Data Processing ---
+numpy==2.3.3
+tqdm==4.67.1
+typing_extensions==4.15.0
