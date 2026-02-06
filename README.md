@@ -26,13 +26,13 @@ We utilize **Ollama** to run localized Large Language Models (LLMs) to ensure da
 
 ### Setup
 1.  **Install Ollama:** Follow the instructions at [ollama.com](https://ollama.com).
-2.  **Pull Required Models:**
-    ```bash
-    ollama run gpt-oss:20b
-    ```
-3.  **Service Configuration:** Ensure the Ollama server is running (default: `http://localhost:11434`).
+2.  **Service Configuration:** Ensure the Ollama server is running (default: `http://localhost:11434`).
     ```bash
     ollama serve
+    ```
+3.  **Run Required Models:** Run the model like:
+    ```bash
+    ollama run gpt-oss:20b
     ```
 
 ---
