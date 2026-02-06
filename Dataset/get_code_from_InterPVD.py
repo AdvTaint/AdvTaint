@@ -8,7 +8,7 @@ os.chdir('/home/langgraph')
 sys.path.append('/home/langgraph')
 
 # Import custom tree-sitter tools
-from tools.ts_sast import get_full_call_chain_from_code, get_func_from_code, get_func_name_from_line
+from static_analysis.ts_sast import get_full_call_chain_from_code, get_func_from_code, get_func_name_from_line
 
 C_KEYWORDS = {
     "if", "for", "while", "switch", "case", "sizeof",
