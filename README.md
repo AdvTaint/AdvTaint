@@ -49,6 +49,7 @@ You can directly run ```AdvTaint.py``` for vulnerability detection. Advtaint is 
 ### Model Selection
 You can change model by altering:
 ```
+sink_superviser = Ollama(model="deepseek-r1:32b", temperature=0,num_ctx=65536,keep_alive='8h',base_url="http://localhost:11435")
 vd_superviser = Ollama(model="deepseek-r1:32b", temperature=0,num_ctx=65536,keep_alive='8h',base_url="http://localhost:11434")
 ```
 
