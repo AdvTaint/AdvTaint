@@ -52,7 +52,11 @@ vd_superviser = Ollama(model="deepseek-r1:32b", temperature=0,num_ctx=65536,keep
 ### Usage (Input/Output)
 * **Input:** The path of the code files to be detected
     ```bash
-    python AdvTaint.py
+    python AdvTaint.py --input /vultrigger/src_code/vul --output /vultrigger/results
+    ```
+    or
+    ```bash
+    python AdvTaint.py --input /vultrigger/src_code/vul/test.c --output ./output
     ```
 * **Output:** A detailed vulnerability report including:
     * **Is_Vulnerable:** (NOT) Vulnerable.
@@ -65,11 +69,13 @@ vd_superviser = Ollama(model="deepseek-r1:32b", temperature=0,num_ctx=65536,keep
 ## 6. Evaluation
 We use LLM to automatically evaluate whether the detection results conform to the ground truth.
 
-### Vulnerable Code Evaluation
+You need to change the results path and ground truth path
+
+### Vulnerable Results Evaluation
 * **Script:** `evaluation/llm_judge_vul.py`
 * **Command:** `python eval_vulnerable.py `
 
-### Patched Code Evaluation
+### Patched Results Evaluation
 * **Script:** `evaluation/llm_judge_novul.py`
 * **Command:** `python eval_clean.py `
 
