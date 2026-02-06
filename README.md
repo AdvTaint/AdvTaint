@@ -5,7 +5,7 @@
 ## 1. Datasets
 The dataset infrastructure is organized into three distinct components:
 
-* **InterPVD** You can download in [here](https://github.com/CGCL-codes/VulTrigger/tree/main/dataset).
+* **InterPVD(Vultrigger)** You can download in [here](https://github.com/CGCL-codes/VulTrigger/tree/main/dataset).
 We also provide a reference file for reading code ```Dataset/get_code_from_InterPVD.py```
 
 * **ReposVul:** You can download in [here](https://github.com/Eshe0922/ReposVul).
