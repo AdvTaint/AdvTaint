@@ -17,7 +17,7 @@ We also provide the original files and CVE/DIFF in```PKCO-2025```
 ---
 
 ## 2. Baselines
-* **LLMxCPG**: You can use it in [here](https://github.com/qcri/llmxcpg). We change his VD module(binary classification） for RCA ```llmxcpg_vdexp.py```
+* **LLMxCPG**: You can use it in [here](https://github.com/qcri/llmxcpg). We change its VD module(binary classification） for RCA ```llmxcpg_vdexp.py```
 * **GPTLens and Vultrial**: You can use it in [here](https://github.com/minifish120/vultrial).
 * **MAVUL**: You can use it in [here](https://github.com/youpengl/MAVUL).
 
