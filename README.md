@@ -40,7 +40,7 @@ We utilize **Ollama** to run localized Large Language Models (LLMs) to ensure da
 ## 4. Static Analysis Module
 We provide static analysis scripts ```static_analysis/ts_sast.py```
 
-We also provide the .so file(C/C++) ```static_analysis/tree_sitter/build/my-languages.so```
+We also provide the tree-sitter parser .so file(for C/C++) ```static_analysis/tree_sitter/build/my-languages.so```
 
 ---
 
