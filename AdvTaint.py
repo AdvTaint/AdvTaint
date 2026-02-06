@@ -23,7 +23,7 @@ from langgraph.graph import StateGraph, START, END
 import argparse
 
 # --- Local Tool Imports ---
-from tools.ts_sast import (
+from static_analysis.ts_sast import (
     generate_rooted_call_graphs, get_code_from_file, 
     extract_filtered_local_variables, get_funcnames_from_file, 
     analyze_taint_paths, analyze_taint_paths_by_param_index
