@@ -17,6 +17,8 @@ We also provide the original files and CVE/DIFF in```PKCO-2025```
 ---
 
 ## 2. Requirement
+Python: 3.8+
+
 Please check all requirements in ```requirement.txt```
 
 ---
