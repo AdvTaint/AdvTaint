@@ -20,6 +20,7 @@ from langchain_core.runnables import Runnable
 from pydantic import BaseModel, Field
 from typing_extensions import TypedDict
 from langgraph.graph import StateGraph, START, END
+import argparse
 
 # --- Local Tool Imports ---
 from tools.ts_sast import (
@@ -935,14 +936,37 @@ app = workflow.compile()
 # SECTION 7: MAIN EXECUTION
 ################################################################################
 if __name__ == "__main__":
-    # vul_files = ['/home/CVE-2025-46836_CWE121.c']
-    vul_files = glob.glob('/vultrigger/src_code/vul'+'/*.c') #input path
+    parser = argparse.ArgumentParser(description="Advanced Taint Analysis Workflow")
+    parser.add_argument(
+        "--input", 
+        type=str, 
+        required=True, 
+        help="Path to the input source file or directory containing .c files."
+    )
+    parser.add_argument(
+        "--output", 
+        type=str, 
+        default="./results", 
+        help="Directory to save the analysis results (default: ./results)."
+    )
+    args = parser.parse_args()
+    if os.path.isfile(args.input):
+        vul_files = [args.input]
+    else:
+        vul_files = glob.glob(os.path.join(args.input, '*.c'))
+        
+    if not os.path.exists(args.output):
+        os.makedirs(args.output)
+        print(f"Created output directory: {args.output}")
+        
     for vul_file in tqdm(vul_files):
         print(f"\n==================== Analyzing File: {vul_file} ====================")
-        name = vul_file.split('/')[-1].split('.c')[0]+'.json'
+        base_name = os.path.basename(vul_file)
+        json_name = os.path.splitext(base_name)[0] + '.json'
+        output_path = os.path.join(args.output, json_name)
         
-        if os.path.exists('/vultrigger/src_code/vul/'+name):
-            print(f"{name} has been processed!")
+        if os.path.exists(output_path):
+            print(f"Skip: {json_name} has already been processed.")
             continue
 
         initial_state = {
@@ -971,7 +995,7 @@ if __name__ == "__main__":
                 res = json.dumps(final_findings, indent=4)
                 print(res)
                 
-                with open('/vultrigger/src_code/vul/'+name,'w') as jf:   #output path
+                with open(output_path,'w') as jf:   #output path
                     json.dump(final_findings, jf, indent=4, ensure_ascii=False)
             else:
                 print("\nNo vulnerabilities found.")
