@@ -3,7 +3,7 @@
 ---
 
 ## 1. Datasets
-The dataset infrastructure is organized into three distinct components:
+We use three real-world C/C++vulnerability datasets:
 
 * **InterPVD(Vultrigger)** You can download in [here](https://github.com/CGCL-codes/VulTrigger/tree/main/dataset).
 We also provide a reference file for reading code ```Dataset/get_code_from_InterPVD.py```
