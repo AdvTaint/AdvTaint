@@ -31,6 +31,9 @@ We utilize **Ollama** to run localized Large Language Models (LLMs) to ensure da
     ollama run gpt-oss:20b
     ```
 3.  **Service Configuration:** Ensure the Ollama server is running (default: `http://localhost:11434`).
+    ```bash
+    ollama serve
+    ```
 
 ---
 
