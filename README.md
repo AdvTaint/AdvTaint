@@ -30,7 +30,7 @@ We utilize **Ollama** to run localized Large Language Models (LLMs) to ensure da
     ```bash
     ollama serve
     ```
-3.  **Run Required Models:** Run the model like:
+3.  **Pull Required Models:** Pull the model like:
     ```bash
     ollama run gpt-oss:20b
     ```
