@@ -87,10 +87,10 @@ You need to change the results path and ground truth path
 
 ### Vulnerable Results Evaluation
 * **Script:** `evaluation/llm_judge_vul.py`
-* **Command:** `python eval_vulnerable.py `
+* **Command:** `python llm_judge_vul.py `
 
 ### Patched Results Evaluation
 * **Script:** `evaluation/llm_judge_novul.py`
-* **Command:** `python eval_clean.py `
+* **Command:** `python llm_judge_novul.py `
 
 ---
