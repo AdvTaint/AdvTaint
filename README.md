@@ -41,7 +41,7 @@ We utilize **Ollama** to run localized Large Language Models (LLMs) to ensure da
     ```
 3.  **Pull Required Models:** Pull the model like:
     ```bash
-    ollama run gpt-oss:20b
+    ollama pull gpt-oss:20b
     ```
 
 ---
