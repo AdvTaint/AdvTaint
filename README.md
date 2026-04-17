@@ -93,4 +93,7 @@ You need to change the results path and ground truth path
 * **Script:** `evaluation/llm_judge_novul.py`
 * **Command:** `python llm_judge_novul.py `
 
+### Classification & RCA  Verified Detection Results
+We also provide all evaluation results from 5.1 to 5.4, including TP TN, FP, FN, Precision, Recall, F1, Accuray in `detection_tptnfpfn.xlsx`
+
 ---
