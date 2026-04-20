@@ -96,4 +96,10 @@ You need to change the results path and ground truth path
 ### Classification & RCA  Verified Detection Results
 We also provide all evaluation results from 5.1 to 5.4, including TP TN, FP, FN, Precision, Recall, F1, Accuray in `detection_tptnfpfn.xlsx`
 
+### LLM-as-Judge Reliability
+We provided the disagreement rates of two rounds of evaluation for three backbone models and the error rates of samples that were manually sampled and agreed upon in `llm_judge_reliability.xlsx`. 
+It can be seen that overall, the error rate of samples that are manually reviewed is about 6.2%, while the error rate of samples that are agreed upon in two rounds is less than 1%.
+
+## 8. Runtime and token cost
+
 ---
