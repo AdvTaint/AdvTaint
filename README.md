@@ -106,7 +106,7 @@ Considering that vulnerability datasets like InterPVD are typically composed of 
 
 Therefore, we have abandoned the evaluation of tools such as CodeQL and Infer. Four source code oriented SAST baselines were selected: **cppcheck**, **flawfinder**, **semgrep**, and **checkmarx**.
 
-The detection results are in `Supplementary_Materials/SAST_detection.xlsx`.
+The detection results are in `Supplementary_Materials/SAST_detection.xlsx`. It can be seen that the analysis performance of existing SAST tools is very poor, especially with high false negatives, while AdvTaint significantly improves the vulnerability detection capability.
 
 ## 8. Runtime and token cost
 
