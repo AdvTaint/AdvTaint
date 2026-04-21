@@ -94,16 +94,23 @@ You need to change the results path and ground truth path
 * **Command:** `python llm_judge_novul.py `
 
 ### Classification- & RCA-Verified Classic metric Results
-We also provide all evaluation results from 5.1 to 5.4, including TP TN, FP, FN, Precision, Recall, F1, Accuray in `detection_tptnfpfn.xlsx`
+We also provide all evaluation results from 5.1 to 5.4, including TP TN, FP, FN, Precision, Recall, F1, Accuray in `Supplementary_Materials/detection_tptnfpfn.xlsx`
 
 ### LLM-as-Judge Reliability
-We provided the disagreement rates of two rounds of evaluation for three backbone models and the error rates of samples that were manually sampled and agreed upon in `llm_judge_reliability.xlsx`. 
+We provide the disagreement rates of two rounds of evaluation for three backbone models and the error rates of samples that are manually sampled and agreed upon in `Supplementary_Materials/llm_judge_reliability.xlsx`. 
 
 It can be seen that overall, the error rate of samples that are manually reviewed is about 6.2%, while the error rate of samples that are agreed upon in two rounds is less than 1%.
 
+### SAST Baselines
+Considering that vulnerability datasets like InterPVD are typically composed of independent source code files and lack complete dependency libraries and Makefiles, forced batch compilation is almost impossible. 
+
+Therefore, we have abandoned the evaluation of tools such as CodeQL and Infer. Four source code oriented SAST baselines were selected: **cppcheck**, **flawfinder**, **semgrep**, and **checkmarx**.
+
+The detection results are in `Supplementary_Materials/SAST_detection.xlsx`.
+
 ## 8. Runtime and token cost
 
-We provide the runtime and token cost of AdvTaint in `cost_evaluation.md`.
+We provide the runtime and token cost of AdvTaint in `Supplementary_Materials/cost_evaluation.md`.
 
 We also calculat the cost per KLOC compared to the baseline, and AdvTaint detected one KLOC at a cost of approximately $1 (using gpt-4o pricing), which is better than existing Vultrail and MaVUL.
 
