@@ -35,7 +35,7 @@ Lightweight static path extraction does not consume much time, and the time over
 ## LLMxCPG
 LLMxCPG needs fine-tuning, so only the cost evaluation for gptlens, vultrail, and mavul are calculated.
 
-## GPTLens(ours)
+## GPTLens
 
 ### Average number of LLM calls ≈ 6 / KLOC
 ### Total cost of LLM calls ≈ $0.4 / KLOC
@@ -43,7 +43,7 @@ LLMxCPG needs fine-tuning, so only the cost evaluation for gptlens, vultrail, an
 ### Average token consumption  ≈ 38k / KLOC
 ### Average runtime ≈  326s (A100 GPU）/ KLOC
 
-## VulTrail(ours)
+## VulTrail
 
 ### Average number of LLM calls ≈ 30 / KLOC
 ### Total cost of LLM calls ≈ $1.3 / KLOC
