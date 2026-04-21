@@ -110,8 +110,8 @@ The detection results are in `Supplementary_Materials/SAST_detection.xlsx`. It c
 
 ## 8. Runtime and token cost
 
-We provide the runtime and token cost of AdvTaint in `Supplementary_Materials/cost_evaluation.md`.
+We provide the approximate runtime and token cost of AdvTaint in `Supplementary_Materials/cost_evaluation.md`.
 
-We also calculat the cost per KLOC compared to the baseline, and AdvTaint detected one KLOC at a cost of approximately $1 (using gpt-4o pricing), which is better than existing Vultrail and MaVUL.
+We also calculate the cost / KLOC compared to the baseline, and AdvTaint detected one KLOC at a cost of approximately $1 (using gpt-4o pricing), which is better than existing Vultrail and MaVUL.
 
 ---
