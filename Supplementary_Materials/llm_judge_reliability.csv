@@ -1,0 +1,9 @@
+AdvTaint with InterPVD(all samples),Disagreement Rate-Vul ,Disagreement Rate -Safe ,Average Fluctuation/Manual review rate,Overall Manual review rate
+deepseek-r1:32b,4.82%,6.64%,5.73%,6.24%
+qwen3:30b,9.66%,5.03%,7.35%,
+gpt-oss:20b,5.84%,5.43%,5.64%,
+,,,,
+AdvTaint with InterPVD(random sampling for manual verification ),"Agreement but Error Rate-Vul(50 pairs, 100 samples) ","Agreement but Error Rate-Safe(50 pairs, 100 samples) ",Average Rate,Overall Rate
+deepseek-r1:32b,0.00%,1/50=2%,1.00%,0.67%
+qwen3:30b,1/50=2%,0.00%,1%,
+gpt-oss:20b,0%,0%,0%,
